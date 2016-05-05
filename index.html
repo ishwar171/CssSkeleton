@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>SIGNUP & LOGIN</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/skeleton.css">
+		<link rel="stylesheet" href="css/task.css">
+		<link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.min.css">
+		
+		<script>
+			function showdiv1()
+			{
+				var div = document.getElementById("newpost");
+				var div1 = document.getElementById("newpost1");
+				if (div.style.display !== "none") {
+					div.style.display = "none";
+					div1.style.display = "block";
+				}
+				else {
+					div.style.display = "block";
+					div1.style.display = "none";
+				}
+			}
+		</script>
+		
+		<script>
+			function showdiv2()
+			{
+				var div = document.getElementById("newpost1");
+				var div1 = document.getElementById("newpost");
+				if (div.style.display !== "none") {
+					div.style.display = "none";
+					div1.style.display = "block";
+				}
+				else {
+					div.style.display = "block";
+					div1.style.display = "none";
+				}
+			}
+		</script>
+		
+		<script>
+			function myFunction(){
+				var div = document.getElementById("newpost");
+				console.log(div);
+				var div1 = document.getElementById("newpost1");
+				if (div.style.display !== "none") {
+					div.style.display = "none";
+					div1.style.display = "block";
+				}
+				else {
+					div.style.display = "block";
+					div1.style.display = "none";
+				}
+			}
+		</script>
+	</head>
+	<body class="maincontent" onload="myFunction()">
+		<div class="container">
+			<div class="row">
+				<div class="one columns"></div>
+				<div class="ten columns maincolumn">
+					<div class="row">
+						<div class="six columns">
+							<h4 class="signupcontent">Don't Have an account?</h4>
+							<p>Bangio tote bag bicycle rights, High Life sartorial cray craft beer whatever  street art fap</p>
+							<input type="submit" onclick="showdiv1();" value="SIGN UP" class="signup">
+							<div class="row">
+								<div class="six-columns signupcolumns animated slideInRight" id="newpost">
+									<form>
+										<h6 class="signuptag">SIGN UP</h6>
+										<input class="u-full-width signupform" type="text" placeholder="Full Name" id="fullnameInput">
+										<span class="usericon"><i class="fa fa-user"></i></span>
+										<input class="u-full-width signupform" type="email" placeholder="Email-Address" id="exampleEmailInput">
+										<span class="usericon1"><i class="fa fa-envelope"></i></span>
+										<input class="u-full-width signupform" type="password" placeholder="Password" id="passwordInput">
+										<span class="usericon2"><i class="fa fa-lock"></i></span>
+										<br>
+										<button class="button-primary offset-by-seven five columns signbtn">SIGN UP</button>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="six columns">
+							<h4 class="logincontent">Have an account?</h4>
+							<p>Bangio tote bag bicycle rights, High Life sartorial cray craft beer whatever  street art fap</p>
+							<input type="submit" onclick="showdiv2();" value="LOGIN" class="login">
+							<div class="row">
+								<div class="six-columns logincolumns animated slideInLeft" id="newpost1">
+									<form>
+										<h6 class="signuptag">LOGIN</h6>
+										<input class="u-full-width signupform" type="email" placeholder="Email-Address" id="exampleEmailInput">
+										<span class="usericon"><i class="fa fa-envelope"></i></span>
+										<input class="u-full-width signupform" type="password" placeholder="Password" id="passwordInput">
+										<span class="usericon1"><i class="fa fa-lock"></i></span>
+										<br><br>
+										<div class="row">
+											<div class="six columns">
+												<p class="forgot">Forgot Password?</p>
+											</div>
+											<div class="offset-by-eight four-columns">
+												<button class="button-primary offset-by-four four-columns loginbtn">LOGIN</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="one columns"></div>
+			</div>
+			<br>
+		</div>
+	</body>
+</html>
